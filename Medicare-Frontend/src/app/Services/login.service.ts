@@ -10,7 +10,7 @@ export class LoginService {
 
   constructor(private http: HttpClient) { }
 
-  baseUrl = 'http://localhost:8080';
+  baseUrl = 'http://52.90.178.58:8080';
 
   //current user: user which is logged in
   public getCurrentUser(): Observable<any> {

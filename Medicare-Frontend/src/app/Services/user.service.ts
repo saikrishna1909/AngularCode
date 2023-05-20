@@ -12,7 +12,7 @@ export class UserService {
 
   constructor(private http: HttpClient) { }
 
-  baseUrl = 'http://localhost:8080';
+  baseUrl = 'http://52.90.178.58:8080';
 
   public userSignUp(user: User): Observable<User> {
     return this.http.post<User>(`${this.baseUrl}/user/signup`, user);
